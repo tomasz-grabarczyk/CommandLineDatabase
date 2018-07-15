@@ -15,19 +15,19 @@ class CreateDB extends Variables {
         int lengthOfDB = nameOfColumnsInDB.length;
 
         for (int i = 0; i < getNumberOfRecords(); i++) {
-            if (i == 0 || i % lengthOfDB == 0) {
+            if (i % lengthOfDB == 0) {
                 System.out.print("Enter first name: ");
-            } else if (i == 1 || i % lengthOfDB == 1) {
+            } else if (i % lengthOfDB == 1) {
                 System.out.print("Enter last name: ");
-            } else if (i == 2 || i % lengthOfDB == 2) {
+            } else if (i % lengthOfDB == 2) {
                 System.out.print("Enter age: ");
-            } else if (i == 3 || i % lengthOfDB == 3) {
+            } else if (i % lengthOfDB == 3) {
                 System.out.print("Enter gender: ");
-            } else if (i == 4 || i % lengthOfDB == 4) {
+            } else if (i % lengthOfDB == 4) {
                 System.out.print("Enter nationality: ");
-            } else if (i == 5 || i % lengthOfDB == 5) {
+            } else if (i % lengthOfDB == 5) {
                 System.out.print("Enter e-mail: ");
-            } else if (i == 6 || i % lengthOfDB == 6) {
+            } else if (i % lengthOfDB == 6) {
                 System.out.print("Enter phone number: ");
             }
             recordsInDB.add(getUserInput().next());
